@@ -12,7 +12,7 @@ import static ru.netology.repository.Authorities.*;
 
 @Repository
 public class UserRepository {
-    private List<User> users;
+    private final List<User> users;
 
     public UserRepository() {
         users = new CopyOnWriteArrayList<>();
